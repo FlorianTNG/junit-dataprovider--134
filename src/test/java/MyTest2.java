@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(DataProviderRunner.class)
-public class MyTest2 {
+public class MyTest2 extends BaseJunit {
   @Test
   @UseDataProvider(value = "dataProvider", location = BaseJunit.class)
   public void getProduct(Map<String, Object> input, Map<String, Object> expected) {
